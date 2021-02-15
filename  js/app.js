@@ -79,7 +79,7 @@ seattle.render()
 // Tokyo 
 
 
-const Tokyo = {
+const tokyo = {
     name: 'Tokyo',
     min: 3,
     max: 24,
@@ -148,13 +148,13 @@ const Tokyo = {
 }
 
 seattle.calc()
-console.log(Tokyo.avg)
+console.log(tokyo.avg)
 seattle.render()
 
 
 // Dubai 
 
-const Dubai = {
+const dubai = {
     name: 'Dubai',
     min: 11,
     max: 38,
@@ -223,12 +223,12 @@ const Dubai = {
 }
 
 seattle.calc()
-console.log(Dubai.avg)
+console.log(dubai.avg)
 seattle.render()
 
 // paris
 
-const Paris = {
+const paris = {
     name: 'Paris',
     min: 20,
     max: 38,
@@ -297,13 +297,13 @@ const Paris = {
 }
 
 seattle.calc()
-console.log(Paris.avg)
+console.log(paris.avg)
 seattle.render()
 
 // Lima
 
 
-const Lima = {
+const lima = {
     name: 'Lima',
     min: 20,
     max: 38,
@@ -372,5 +372,5 @@ const Lima = {
 }
 
 seattle.calc()
-console.log(Lima.avg)
+console.log(lima.avg)
 seattle.render()
