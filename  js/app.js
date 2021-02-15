@@ -1,4 +1,6 @@
 "use strict";
+
+
 const hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 
 function getRndInteger(min, max) {
@@ -221,10 +223,9 @@ const dubai = {
 
     },
 }
-
-seattle.calc()
+dubai.calc()
 console.log(dubai.avg)
-seattle.render()
+dubai.render()
 
 // paris
 
@@ -296,9 +297,9 @@ const paris = {
     },
 }
 
-seattle.calc()
+paris.calc()
 console.log(paris.avg)
-seattle.render()
+paris.render()
 
 // Lima
 
@@ -371,6 +372,6 @@ const lima = {
     },
 }
 
-seattle.calc()
+lima.calc()
 console.log(lima.avg)
-seattle.render()
+lima.render()
