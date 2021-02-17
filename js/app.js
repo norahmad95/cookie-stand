@@ -14,7 +14,6 @@ function Location(name, min, max, avgPerCustSales) {
     this.name = name,
         this.min = min,
         this.max = max,
-        // this.avg = [],
         this.avgPerCustSales = Math.ceil(avgPerCustSales),
         this.salesPerHour = [],
         this.totalSeals = 0,
