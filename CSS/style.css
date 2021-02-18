@@ -1,9 +1,13 @@
 header nav ul {
-    margin-right: 10cm;
+    background-color: peru;
     font-weight: inherit;
     font-style: oblique;
     list-style-type: square;
-    color: rgb(255, 25, 56);
+    color: rgb(134, 65, 0);
+}
+
+a:link {
+    color: rgb(54, 27, 0);
 }
 
 h1 {
@@ -11,6 +15,7 @@ h1 {
 }
 
 body {
+    background-color: rgba(97, 63, 0, 0.329);
     background-image: url(img/fish-h.png);
 }
 
