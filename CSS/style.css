@@ -1,10 +1,89 @@
-    ul {
-        list-style-type: square;
-    }
-    
-    header {
-        color: rgb(252, 117, 76);
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-weight: inherit;
-        font-style: oblique;
-    }
+body {
+    background-image: url(/img/family.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div {
+    background-image: url(/img/salmon.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    font-size: 40px;
+    color: rgb(152, 25, 255);
+    margin-left: 20px;
+    text-shadow: 4px 2px 5px #550000;
+}
+
+nav {
+    border-radius: 2px;
+    border-color: khaki;
+    font-size: 25px;
+    background-color: rgba(99, 45, 1, 0.479);
+    color: lightgoldenrodyellow;
+    border-style: dotted dashed solid double;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header ul {
+    margin-left: 20px;
+}
+
+a:link {
+    text-decoration: none;
+    color: khaki;
+}
+
+h1 {
+    font-size: 60px;
+    color: yellow;
+    font-stretch: ultra-expanded;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px #ff0000;
+    padding-left: 15px;
+}
+
+table {
+    border-collapse: collapse;
+    color: rgb(0, 0, 255);
+    background-color: rgba(255, 252, 97, 0.548);
+    margin-top: 15px;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #750000;
+    color: lavender;
+}
+
+th {
+    background-color: #ff744a;
+    color: rgb(0, 0, 0);
+}
+
+table {
+    width: auto;
+    font-size: 30px;
+}
+
+#super {
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: inherit;
+}
+
+section {
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgba(99, 45, 1, 0.479);
+    padding-left: 15px;
+}
+
+img {
+    margin-left: 15px;
+}

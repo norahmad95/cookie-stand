@@ -80,12 +80,12 @@ let footerTotal = function() {
     tdColom.textContent = 'total'
 
     let totalOoTotal = 0
-    for (let i = 0; i < hours.length - 1; i++) {
+    for (let i = 0; i < hours.length; i++) {
         let tdColom = document.createElement('td');
         footerRow.appendChild(tdColom);
         let totalColom = 0
 
-        for (let indx = 0; indx > city.length; indx++) {
+        for (let indx = 0; indx < city.length; indx++) {
             totalColom = totalColom + city[indx].salesPerHour[i];
             console.log(city[indx].salesPerHour[i]);
 
