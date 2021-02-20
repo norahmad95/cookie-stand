@@ -164,7 +164,6 @@ footerTotal();
 
 
 
-
 //     render: function() {
 //         const sealDiv = document.getElementById('seal');
 
