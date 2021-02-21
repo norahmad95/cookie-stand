@@ -83,12 +83,12 @@ let footerTotal = function() {
     tdColom.textContent = 'total'
 
     let totalOoTotal = 0
-    for (let i = 0; i < hours.length - 1; i++) {
+    for (let i = 0; i < hours.length; i++) {
         let tdColom = document.createElement('td');
         footerRow.appendChild(tdColom);
         let totalColom = 0
 
-        for (let indx = 0; indx > city.length; indx++) {
+        for (let indx = 0; indx < city.length; indx++) {
             totalColom = totalColom + city[indx].salesPerHour[i];
             console.log(city[indx].salesPerHour[i]);
 
@@ -134,31 +134,24 @@ const lima = new Location('Lima', 2, 16, 4.6);
 
 let city = [seattle, tokyo, dubai, paris, lima];
 
-// event part 
+// event part
 const form = document.getElementById('new-shop');
-renderHeader();
 form.addEventListener('submit', function(event) {
-    seattle.render();
     event.preventDefault();
-    tokyo.render();
-    dubai.render();
     const name = event.target.name.value;
-    paris.render();
     const min = event.target.min.value;
-    lima.render();
     const max = event.target.max.value;
     const avgPerCustSales = event.target.avgPerCustSales.value;
-    const newShop = new ShopLocation(name, min, max, avgPerCustSales);
+    const newShop = new Location(name, min, max, avgPerCustSales);
 
-    const footerRow = document.getElementById('seal');
-    const tdColom = footerRow.rows.length;
-    footerRow.deleteRow(tdColom - 1);
+    // const footerRow = document.getElementById('seal');
+    // // const tdColom = footerRow.rows.length;
+    // footerRow.deleteRow(tdColom - 1);
     newShop.render();
     form.reset();
 
     footerTotal();
 });
-footerTotal();
 
 
 // function part
@@ -168,6 +161,8 @@ tokyo.render();
 dubai.render();
 paris.render();
 lima.render();
+footerTotal();
+
 
 
 // lab 06
