@@ -7,6 +7,8 @@ const continar = document.getElementById('seal');
 const tableData = document.createElement('table');
 continar.appendChild(tableData);
 
+let deletedFoot;
+
 // function getRndInteger(min, max) {
 // return Math.floor(Math.random() * (max - min + 1)) + min;
 // }
@@ -74,6 +76,7 @@ Location.prototype.render = function() {
 let footerTotal = function() {
     let footerRow = document.createElement('tr');
     // delet 
+
     tableData.appendChild(footerRow);
     let tdColom = document.createElement('td');
     footerRow.appendChild(tdColom);
@@ -128,16 +131,44 @@ const dubai = new Location('Dubai', 11, 38, 3.7);
 const paris = new Location('Paris', 20, 38, 2.3);
 const lima = new Location('Lima', 2, 16, 4.6);
 
-// function call
+
 let city = [seattle, tokyo, dubai, paris, lima];
 
+// event part 
+const form = document.getElementById('new-shop');
+renderHeader();
+form.addEventListener('submit', function(event) {
+    seattle.render();
+    event.preventDefault();
+    tokyo.render();
+    dubai.render();
+    const name = event.target.name.value;
+    paris.render();
+    const min = event.target.min.value;
+    lima.render();
+    const max = event.target.max.value;
+    const avgPerCustSales = event.target.avgPerCustSales.value;
+    const newShop = new ShopLocation(name, min, max, avgPerCustSales);
+
+    const footerRow = document.getElementById('seal');
+    const tdColom = footerRow.rows.length;
+    footerRow.deleteRow(tdColom - 1);
+    newShop.render();
+    form.reset();
+
+    footerTotal();
+});
+footerTotal();
+
+
+// function part
 renderHeader();
 seattle.render();
 tokyo.render();
 dubai.render();
 paris.render();
 lima.render();
-footerTotal();
+
 
 // lab 06
 // const seattle = {
@@ -502,4 +533,4 @@ footerTotal();
 //         lima.render()() console.log(lima.avg) lima.render() ima.avg)
 //         lima.render()() console.log(lima.avg) lima.render() ima.avg)
 //         lima.render()() console.log(lima.avg) lima.render() ima.avg)
-//         lima.render()
+//         lima.render();
